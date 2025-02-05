@@ -37,3 +37,28 @@ h2 {
   color: #333;
   font-size: 1.5em;
 }
+
+.custom-diff-container {
+  margin-top: 20px !important;
+  height: 500px !important;
+  width: 100% !important;
+  border: 1px solid #ccc !important;
+  overflow: auto !important;
+}
+
+#acediff__wrap {
+  position: relative;
+  width: 100% !important;
+  min-height: 100vh;
+  
+}
+
+.acediff__wrap {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+.file_viewer .ace_focus {
+  border: 1px solid #000 !important;
+}

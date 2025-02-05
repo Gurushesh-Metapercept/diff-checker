@@ -1,15 +1,20 @@
-// File: App.js
-import React from "react";
 import "./App.css";
-import FileExplorer from "./components/FileExplorer";
+
+import Home from "./components/Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import FolderDiff from "./components/folder-diff/FolderDiff";
+import FileDiffHome from "./components/file-diff/FileDiffHome";
 
 function App() {
   return (
     <div className="App">
-      <h1>Folder Viewer</h1>
-      <div className="file-explorer-container">
-        <FileExplorer />
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/folder-diff" element={<FolderDiff />} />
+          <Route path="/file-diff" element={<FileDiffHome />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
