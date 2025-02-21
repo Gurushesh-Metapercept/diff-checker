@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 // 📁 Folder & File Icons
 const FolderIcon = ({ isOpen }) => (
@@ -169,7 +169,6 @@ const FileExplorer = () => {
 
   const tree1 = buildTree(folder1Files);
   const tree2 = buildTree(folder2Files);
-  const mergedTree = mergeTrees(tree1, tree2);
 
   return (
     <div
